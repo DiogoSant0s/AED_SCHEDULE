@@ -1,0 +1,170 @@
+\hypertarget{class_interval}{}\doxysection{Interval Class Reference}
+\label{class_interval}\index{Interval@{Interval}}
+
+
+{\ttfamily \#include $<$Interval.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_interval_a261854faa1ee7d1e5a1a9e4b3f3e3f77}{Interval}} (int weekday, float start, float end, string type)
+\item 
+\mbox{\hyperlink{class_interval_a0b17aac97a9288d416fb8ba220a47fbe}{Interval}} (const \mbox{\hyperlink{class_interval}{Interval}} \&I)
+\item 
+int \mbox{\hyperlink{class_interval_ab1bf438fcf1b6c601ca5e8eeb12ee928}{get\+Week\+Day}} () const
+\item 
+float \mbox{\hyperlink{class_interval_afeb09a74be4b902546fcdf2040995fb3}{get\+Start}} () const
+\item 
+float \mbox{\hyperlink{class_interval_a8fb7600ec2b4656159b4742c26edc096}{get\+End}} () const
+\item 
+string \mbox{\hyperlink{class_interval_a5e29741ef5f80e1f185858f11d68d918}{get\+Type}} () const
+\item 
+void \mbox{\hyperlink{class_interval_ab12fed308b1e5cf5fefe246d1f880a3e}{set\+Week\+Day}} (int new\+Week\+Day)
+\item 
+void \mbox{\hyperlink{class_interval_a97293776fc704133e3ba5cd119697cf0}{set\+Start}} (float new\+Start)
+\item 
+void \mbox{\hyperlink{class_interval_a301dcf8f40c77f91ecb539f1d70e0ea6}{set\+End}} (float new\+End)
+\item 
+void \mbox{\hyperlink{class_interval_a6680b00d7694e2d5861bf29dbbb68587}{set\+Type}} (string new\+Type)
+\item 
+bool \mbox{\hyperlink{class_interval_a76dc246cf31111b417849385fe545151}{operator==}} (const \mbox{\hyperlink{class_interval}{Interval}} \&I) const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe \mbox{\hyperlink{class_interval}{Interval}}
+
+Esta classe define o dia, o tipo e as horas de início e de fim de uma aula 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_interval_a261854faa1ee7d1e5a1a9e4b3f3e3f77}\label{class_interval_a261854faa1ee7d1e5a1a9e4b3f3e3f77}} 
+\index{Interval@{Interval}!Interval@{Interval}}
+\index{Interval@{Interval}!Interval@{Interval}}
+\doxysubsubsection{\texorpdfstring{Interval()}{Interval()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Interval\+::\+Interval (\begin{DoxyParamCaption}\item[{int}]{weekday,  }\item[{float}]{start,  }\item[{float}]{end,  }\item[{string}]{type }\end{DoxyParamCaption})}
+
+Complexity\+: O(1) Construtor personalizado da classe. 
+\begin{DoxyParams}{Parameters}
+{\em weekday} & int relativo ao dia da aula \\
+\hline
+{\em start} & float relativa à hora de início da aula \\
+\hline
+{\em end} & float relativa à hora de fim da aula \\
+\hline
+{\em type} & string relativa ao tipo de aula \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_interval_a0b17aac97a9288d416fb8ba220a47fbe}\label{class_interval_a0b17aac97a9288d416fb8ba220a47fbe}} 
+\index{Interval@{Interval}!Interval@{Interval}}
+\index{Interval@{Interval}!Interval@{Interval}}
+\doxysubsubsection{\texorpdfstring{Interval()}{Interval()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Interval\+::\+Interval (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_interval}{Interval}} \&}]{I }\end{DoxyParamCaption})}
+
+Complexity\+: O(1) Copy Construtor da classe. 
+\begin{DoxyParams}{Parameters}
+{\em I} & membro da classe \mbox{\hyperlink{class_interval}{Interval}} que se pretende copiar \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_interval_a8fb7600ec2b4656159b4742c26edc096}\label{class_interval_a8fb7600ec2b4656159b4742c26edc096}} 
+\index{Interval@{Interval}!getEnd@{getEnd}}
+\index{getEnd@{getEnd}!Interval@{Interval}}
+\doxysubsubsection{\texorpdfstring{getEnd()}{getEnd()}}
+{\footnotesize\ttfamily float Interval\+::get\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Complexity\+: O(1) Método normal que devolve o atributo end \begin{DoxyReturn}{Returns}
+float relativa à hora de fim da aula 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_interval_afeb09a74be4b902546fcdf2040995fb3}\label{class_interval_afeb09a74be4b902546fcdf2040995fb3}} 
+\index{Interval@{Interval}!getStart@{getStart}}
+\index{getStart@{getStart}!Interval@{Interval}}
+\doxysubsubsection{\texorpdfstring{getStart()}{getStart()}}
+{\footnotesize\ttfamily float Interval\+::get\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Complexity\+: O(1) Método normal que devolve o atributo start \begin{DoxyReturn}{Returns}
+float relativa à hora de início da aula 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_interval_a5e29741ef5f80e1f185858f11d68d918}\label{class_interval_a5e29741ef5f80e1f185858f11d68d918}} 
+\index{Interval@{Interval}!getType@{getType}}
+\index{getType@{getType}!Interval@{Interval}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily string Interval\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Complexity\+: O(1) Método normal que devolve o atributo type \begin{DoxyReturn}{Returns}
+string relativa ao tipo de aula 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_interval_ab1bf438fcf1b6c601ca5e8eeb12ee928}\label{class_interval_ab1bf438fcf1b6c601ca5e8eeb12ee928}} 
+\index{Interval@{Interval}!getWeekDay@{getWeekDay}}
+\index{getWeekDay@{getWeekDay}!Interval@{Interval}}
+\doxysubsubsection{\texorpdfstring{getWeekDay()}{getWeekDay()}}
+{\footnotesize\ttfamily int Interval\+::get\+Week\+Day (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Complexity\+: O(1) Método normal que devolve o atributo weekday \begin{DoxyReturn}{Returns}
+int relativo ao dia da aula 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_interval_a76dc246cf31111b417849385fe545151}\label{class_interval_a76dc246cf31111b417849385fe545151}} 
+\index{Interval@{Interval}!operator==@{operator==}}
+\index{operator==@{operator==}!Interval@{Interval}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Interval\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_interval}{Interval}} \&}]{I }\end{DoxyParamCaption}) const}
+
+Complexity\+: O(n) Operador de igualdade para dois membros da classe \mbox{\hyperlink{class_interval}{Interval}}. 
+\begin{DoxyParams}{Parameters}
+{\em I} & membro da classe \mbox{\hyperlink{class_interval}{Interval}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true caso os dois membros sejam relativos a datas iguais com types sobreponíveis, false caso contrário 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_interval_a301dcf8f40c77f91ecb539f1d70e0ea6}\label{class_interval_a301dcf8f40c77f91ecb539f1d70e0ea6}} 
+\index{Interval@{Interval}!setEnd@{setEnd}}
+\index{setEnd@{setEnd}!Interval@{Interval}}
+\doxysubsubsection{\texorpdfstring{setEnd()}{setEnd()}}
+{\footnotesize\ttfamily void Interval\+::set\+End (\begin{DoxyParamCaption}\item[{float}]{new\+End }\end{DoxyParamCaption})}
+
+Complexity\+: O(1) Método void que modifica o atributo end segundo o parâmetro utilizado 
+\begin{DoxyParams}{Parameters}
+{\em new\+End} & float relativa à hora de fim da aula \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_interval_a97293776fc704133e3ba5cd119697cf0}\label{class_interval_a97293776fc704133e3ba5cd119697cf0}} 
+\index{Interval@{Interval}!setStart@{setStart}}
+\index{setStart@{setStart}!Interval@{Interval}}
+\doxysubsubsection{\texorpdfstring{setStart()}{setStart()}}
+{\footnotesize\ttfamily void Interval\+::set\+Start (\begin{DoxyParamCaption}\item[{float}]{new\+Start }\end{DoxyParamCaption})}
+
+Complexity\+: O(n1) Método void que modifica o atributo start segundo o parâmetro utilizado 
+\begin{DoxyParams}{Parameters}
+{\em new\+Start} & float relativa à hora de início da aula \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_interval_a6680b00d7694e2d5861bf29dbbb68587}\label{class_interval_a6680b00d7694e2d5861bf29dbbb68587}} 
+\index{Interval@{Interval}!setType@{setType}}
+\index{setType@{setType}!Interval@{Interval}}
+\doxysubsubsection{\texorpdfstring{setType()}{setType()}}
+{\footnotesize\ttfamily void Interval\+::set\+Type (\begin{DoxyParamCaption}\item[{string}]{new\+Type }\end{DoxyParamCaption})}
+
+Complexity\+: O(1) Método void que modifica o atributo type segundo o parâmetro utilizado 
+\begin{DoxyParams}{Parameters}
+{\em new\+Type} & string relativa ao tipo de aula \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_interval_ab12fed308b1e5cf5fefe246d1f880a3e}\label{class_interval_ab12fed308b1e5cf5fefe246d1f880a3e}} 
+\index{Interval@{Interval}!setWeekDay@{setWeekDay}}
+\index{setWeekDay@{setWeekDay}!Interval@{Interval}}
+\doxysubsubsection{\texorpdfstring{setWeekDay()}{setWeekDay()}}
+{\footnotesize\ttfamily void Interval\+::set\+Week\+Day (\begin{DoxyParamCaption}\item[{int}]{new\+Week\+Day }\end{DoxyParamCaption})}
+
+Complexity\+: O(1) Método void que modifica o atributo weekday segundo o parâmetro utilizado 
+\begin{DoxyParams}{Parameters}
+{\em new\+Week\+Day} & int relativo ao dia da aula \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Headers/Interval.\+h\item 
+src/\+Implementation/Interval.\+cpp\end{DoxyCompactItemize}

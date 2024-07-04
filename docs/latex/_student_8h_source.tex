@@ -1,0 +1,34 @@
+\hypertarget{_student_8h_source}{}\doxysection{Student.\+h}
+\label{_student_8h_source}\index{src/Headers/Student.h@{src/Headers/Student.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef AED\_SCHEDULE\_STUDENT\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define AED\_SCHEDULE\_STUDENT\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <utility>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}UC.h"{}}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{16 \textcolor{keyword}{class }\mbox{\hyperlink{class_student}{Student}} \{}
+\DoxyCodeLine{17     \textcolor{keywordtype}{string} name;}
+\DoxyCodeLine{18     \textcolor{keywordtype}{int} StudentId;}
+\DoxyCodeLine{19     vector<UC> classes;}
+\DoxyCodeLine{20 \textcolor{keyword}{public}:}
+\DoxyCodeLine{28     \mbox{\hyperlink{class_student}{Student}}(\textcolor{keywordtype}{string} name, \textcolor{keywordtype}{int} StudentId, vector<UC> classes);}
+\DoxyCodeLine{34     \mbox{\hyperlink{class_student}{Student}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_student}{Student}}\& S);}
+\DoxyCodeLine{40     \textcolor{keywordtype}{string} \mbox{\hyperlink{class_student_abd89cc79098d40204e387e2b57b15716}{getName}}();}
+\DoxyCodeLine{46     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_student_a10a87a766d0de17564c9a958fa10b7d8}{getId}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{52     vector<UC> \mbox{\hyperlink{class_student_a6d4e4a94d9db44255c226c1cb9592abb}{getClasses}}();}
+\DoxyCodeLine{58     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_student_ac022ee8b4e090674faaee25400445a5a}{setName}}(\textcolor{keywordtype}{string} newName);}
+\DoxyCodeLine{64     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_student_a743c4cb98b601841ea34f1177aa84dcb}{setId}}(\textcolor{keywordtype}{int} newStudentId);}
+\DoxyCodeLine{70     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_student_ae168ad983958247ab76d1d785d231e08}{setClasses}}(vector<UC> newClasses);}
+\DoxyCodeLine{77     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_student_a18113abcb4c9b79992313d9ef2a64fbf}{operator==}}(\mbox{\hyperlink{class_student}{Student}}\& S) \textcolor{keyword}{const};}
+\DoxyCodeLine{83     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_student_a6830a9b0d17ba25f876963bf94a14338}{addUC}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_u_c}{UC}}\& \mbox{\hyperlink{class_u_c}{UC}});}
+\DoxyCodeLine{84 \};}
+\DoxyCodeLine{85 }
+\DoxyCodeLine{86 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//AED\_SCHEDULE\_STUDENT\_H}}
+
+\end{DoxyCode}

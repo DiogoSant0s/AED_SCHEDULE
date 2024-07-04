@@ -1,0 +1,35 @@
+\hypertarget{_interval_8h_source}{}\doxysection{Interval.\+h}
+\label{_interval_8h_source}\index{src/Headers/Interval.h@{src/Headers/Interval.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef AED\_SCHEDULE\_INTERVAL\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define AED\_SCHEDULE\_INTERVAL\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <sstream>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <utility>}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{15 \textcolor{keyword}{class }\mbox{\hyperlink{class_interval}{Interval}} \{}
+\DoxyCodeLine{16     \textcolor{keywordtype}{int} weekday;}
+\DoxyCodeLine{17     \textcolor{keywordtype}{float} start;}
+\DoxyCodeLine{18     \textcolor{keywordtype}{float} end;}
+\DoxyCodeLine{19     \textcolor{keywordtype}{string} type;}
+\DoxyCodeLine{20 \textcolor{keyword}{public}:}
+\DoxyCodeLine{29     \mbox{\hyperlink{class_interval}{Interval}}(\textcolor{keywordtype}{int} weekday, \textcolor{keywordtype}{float} start, \textcolor{keywordtype}{float} end, \textcolor{keywordtype}{string} type);}
+\DoxyCodeLine{35     \mbox{\hyperlink{class_interval}{Interval}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_interval}{Interval}}\& I);}
+\DoxyCodeLine{41     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_interval_ab1bf438fcf1b6c601ca5e8eeb12ee928}{getWeekDay}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{47     \textcolor{keywordtype}{float} \mbox{\hyperlink{class_interval_afeb09a74be4b902546fcdf2040995fb3}{getStart}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{53     \textcolor{keywordtype}{float} \mbox{\hyperlink{class_interval_a8fb7600ec2b4656159b4742c26edc096}{getEnd}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{59     \textcolor{keywordtype}{string} \mbox{\hyperlink{class_interval_a5e29741ef5f80e1f185858f11d68d918}{getType}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{65     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_interval_ab12fed308b1e5cf5fefe246d1f880a3e}{setWeekDay}}(\textcolor{keywordtype}{int} newWeekDay);}
+\DoxyCodeLine{71     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_interval_a97293776fc704133e3ba5cd119697cf0}{setStart}}(\textcolor{keywordtype}{float} newStart);}
+\DoxyCodeLine{77     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_interval_a301dcf8f40c77f91ecb539f1d70e0ea6}{setEnd}}(\textcolor{keywordtype}{float} newEnd);}
+\DoxyCodeLine{83     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_interval_a6680b00d7694e2d5861bf29dbbb68587}{setType}}(\textcolor{keywordtype}{string} newType);}
+\DoxyCodeLine{90     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_interval_a76dc246cf31111b417849385fe545151}{operator==}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_interval}{Interval}}\& I) \textcolor{keyword}{const};}
+\DoxyCodeLine{91 \};}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{93 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//AED\_SCHEDULE\_INTERVAL\_H}}
+
+\end{DoxyCode}

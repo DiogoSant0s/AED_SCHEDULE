@@ -1,0 +1,157 @@
+\hypertarget{class_student}{}\doxysection{Student Class Reference}
+\label{class_student}\index{Student@{Student}}
+
+
+{\ttfamily \#include $<$Student.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_student_a5489a8e0d9a39c0d5c37a2b3c4ec97be}{Student}} (string name, int Student\+Id, vector$<$ \mbox{\hyperlink{class_u_c}{UC}} $>$ classes)
+\item 
+\mbox{\hyperlink{class_student_a63d2dc22bdda0fbda77424bf9edf2567}{Student}} (const \mbox{\hyperlink{class_student}{Student}} \&S)
+\item 
+string \mbox{\hyperlink{class_student_abd89cc79098d40204e387e2b57b15716}{get\+Name}} ()
+\item 
+int \mbox{\hyperlink{class_student_a10a87a766d0de17564c9a958fa10b7d8}{get\+Id}} () const
+\item 
+vector$<$ \mbox{\hyperlink{class_u_c}{UC}} $>$ \mbox{\hyperlink{class_student_a6d4e4a94d9db44255c226c1cb9592abb}{get\+Classes}} ()
+\item 
+void \mbox{\hyperlink{class_student_ac022ee8b4e090674faaee25400445a5a}{set\+Name}} (string new\+Name)
+\item 
+void \mbox{\hyperlink{class_student_a743c4cb98b601841ea34f1177aa84dcb}{set\+Id}} (int new\+Student\+Id)
+\item 
+void \mbox{\hyperlink{class_student_ae168ad983958247ab76d1d785d231e08}{set\+Classes}} (vector$<$ \mbox{\hyperlink{class_u_c}{UC}} $>$ new\+Classes)
+\item 
+bool \mbox{\hyperlink{class_student_a18113abcb4c9b79992313d9ef2a64fbf}{operator==}} (\mbox{\hyperlink{class_student}{Student}} \&S) const
+\item 
+void \mbox{\hyperlink{class_student_a6830a9b0d17ba25f876963bf94a14338}{add\+UC}} (const \mbox{\hyperlink{class_u_c}{UC}} \&\mbox{\hyperlink{class_u_c}{UC}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe \mbox{\hyperlink{class_student}{Student}}
+
+Esta classe define as aulas de um estudante 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_student_a5489a8e0d9a39c0d5c37a2b3c4ec97be}\label{class_student_a5489a8e0d9a39c0d5c37a2b3c4ec97be}} 
+\index{Student@{Student}!Student@{Student}}
+\index{Student@{Student}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{Student()}{Student()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Student\+::\+Student (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{int}]{Student\+Id,  }\item[{vector$<$ \mbox{\hyperlink{class_u_c}{UC}} $>$}]{classes }\end{DoxyParamCaption})}
+
+Complexity\+: O(1) Construtor personalizado da classe. 
+\begin{DoxyParams}{Parameters}
+{\em name} & string relativa ao nome do estudante \\
+\hline
+{\em Student\+Id} & int relativa ao número de estudante do estudante \\
+\hline
+{\em classes} & vector que representa as aulas do estudante \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_student_a63d2dc22bdda0fbda77424bf9edf2567}\label{class_student_a63d2dc22bdda0fbda77424bf9edf2567}} 
+\index{Student@{Student}!Student@{Student}}
+\index{Student@{Student}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{Student()}{Student()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Student\+::\+Student (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_student}{Student}} \&}]{S }\end{DoxyParamCaption})}
+
+Complexity\+: O(1) Copy Construtor da classe. 
+\begin{DoxyParams}{Parameters}
+{\em S} & membro da classe \mbox{\hyperlink{class_student}{Student}} que se pretende copiar \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_student_a6830a9b0d17ba25f876963bf94a14338}\label{class_student_a6830a9b0d17ba25f876963bf94a14338}} 
+\index{Student@{Student}!addUC@{addUC}}
+\index{addUC@{addUC}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{addUC()}{addUC()}}
+{\footnotesize\ttfamily void Student\+::add\+UC (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_u_c}{UC}} \&}]{UC }\end{DoxyParamCaption})}
+
+Complexity\+: O(1) Método void que modifica o atributo classes segundo o parâmetro utilizado 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_u_c}{UC}}} & membro da classe \mbox{\hyperlink{class_u_c}{UC}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_student_a6d4e4a94d9db44255c226c1cb9592abb}\label{class_student_a6d4e4a94d9db44255c226c1cb9592abb}} 
+\index{Student@{Student}!getClasses@{getClasses}}
+\index{getClasses@{getClasses}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{getClasses()}{getClasses()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_u_c}{UC}} $>$ Student\+::get\+Classes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Complexity\+: O(1) Método normal que devolve o atributo classes \begin{DoxyReturn}{Returns}
+vector que representa as aulas do estudante 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_student_a10a87a766d0de17564c9a958fa10b7d8}\label{class_student_a10a87a766d0de17564c9a958fa10b7d8}} 
+\index{Student@{Student}!getId@{getId}}
+\index{getId@{getId}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily int Student\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Complexity\+: O(1) Método normal que devolve o atributo Student\+Id \begin{DoxyReturn}{Returns}
+int relativa ao número de estudante do estudante 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_student_abd89cc79098d40204e387e2b57b15716}\label{class_student_abd89cc79098d40204e387e2b57b15716}} 
+\index{Student@{Student}!getName@{getName}}
+\index{getName@{getName}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string Student\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Complexity\+: O(1) Método normal que devolve o atributo name \begin{DoxyReturn}{Returns}
+string relativa ao nome do estudante 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_student_a18113abcb4c9b79992313d9ef2a64fbf}\label{class_student_a18113abcb4c9b79992313d9ef2a64fbf}} 
+\index{Student@{Student}!operator==@{operator==}}
+\index{operator==@{operator==}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Student\+::operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_student}{Student}} \&}]{S }\end{DoxyParamCaption}) const}
+
+Complexity\+: O(1) Operador de igualdade para dois membros da classe \mbox{\hyperlink{class_student}{Student}}. 
+\begin{DoxyParams}{Parameters}
+{\em S} & membro da classe \mbox{\hyperlink{class_student}{Student}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true caso os dois membros sejam relativos ao mesmo aluno, false caso contrário 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_student_ae168ad983958247ab76d1d785d231e08}\label{class_student_ae168ad983958247ab76d1d785d231e08}} 
+\index{Student@{Student}!setClasses@{setClasses}}
+\index{setClasses@{setClasses}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{setClasses()}{setClasses()}}
+{\footnotesize\ttfamily void Student\+::set\+Classes (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_u_c}{UC}} $>$}]{new\+Classes }\end{DoxyParamCaption})}
+
+Complexity\+: O(1) Método void que modifica o atributo classes segundo o parâmetro utilizado 
+\begin{DoxyParams}{Parameters}
+{\em new\+Classes} & int relativa ao número de estudante do estudante \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_student_a743c4cb98b601841ea34f1177aa84dcb}\label{class_student_a743c4cb98b601841ea34f1177aa84dcb}} 
+\index{Student@{Student}!setId@{setId}}
+\index{setId@{setId}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{setId()}{setId()}}
+{\footnotesize\ttfamily void Student\+::set\+Id (\begin{DoxyParamCaption}\item[{int}]{new\+Student\+Id }\end{DoxyParamCaption})}
+
+Complexity\+: O(1) Método void que modifica o atributo Student\+Id segundo o parâmetro utilizado 
+\begin{DoxyParams}{Parameters}
+{\em new\+Student\+Id} & int relativa ao número de estudante do estudante \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_student_ac022ee8b4e090674faaee25400445a5a}\label{class_student_ac022ee8b4e090674faaee25400445a5a}} 
+\index{Student@{Student}!setName@{setName}}
+\index{setName@{setName}!Student@{Student}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Student\+::set\+Name (\begin{DoxyParamCaption}\item[{string}]{new\+Name }\end{DoxyParamCaption})}
+
+Complexity\+: O(1) Método void que modifica o atributo name segundo o parâmetro utilizado 
+\begin{DoxyParams}{Parameters}
+{\em new\+Name} & string relativa ao nome do estudante \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Headers/Student.\+h\item 
+src/\+Implementation/Student.\+cpp\end{DoxyCompactItemize}

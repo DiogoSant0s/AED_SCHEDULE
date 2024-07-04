@@ -1,0 +1,182 @@
+\hypertarget{class_u_c}{}\doxysection{UC Class Reference}
+\label{class_u_c}\index{UC@{UC}}
+
+
+{\ttfamily \#include $<$UC.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_u_c_a6864b210e2d3f511356b05750758ae78}{UC}} (string code\+UC, string Class, int Num\+Students)
+\item 
+\mbox{\hyperlink{class_u_c_a75589af5b8a9b618a62ea40b8ebb0611}{UC}} (string code\+UC, string Class)
+\item 
+\mbox{\hyperlink{class_u_c_a8043648cb2d740b01ad444814c7897d7}{UC}} (const \mbox{\hyperlink{class_u_c}{UC}} \&C)
+\item 
+string \mbox{\hyperlink{class_u_c_aafd6bcadf9924fe23a9567235f6b6522}{getcode\+UC}} () const
+\item 
+string \mbox{\hyperlink{class_u_c_a154525181febaf2e451b000fa0c087bb}{get\+Class}} () const
+\item 
+int \mbox{\hyperlink{class_u_c_a34da5cde9e79aae18dac09df97d2bbad}{get\+Num\+Students}} () const
+\item 
+void \mbox{\hyperlink{class_u_c_a16e914e79b27697e0886eae4390bce2f}{setcode\+UC}} (string newcode\+UC)
+\item 
+void \mbox{\hyperlink{class_u_c_a582ea06a6d57ea391bae337d15de8cfb}{set\+Class}} (string new\+Class)
+\item 
+void \mbox{\hyperlink{class_u_c_a9ff32b67afacb4755212fce2af4dfce8}{add\+Student}} ()
+\item 
+void \mbox{\hyperlink{class_u_c_a36a24383a6e598ae4f541550ee2ea0c8}{remove\+Student}} ()
+\item 
+bool \mbox{\hyperlink{class_u_c_a40e8228acf779facddef516c9376d778}{operator==}} (\mbox{\hyperlink{class_u_c}{UC}} \&\mbox{\hyperlink{class_u_c}{UC}}) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_u_c_a39b9bd9113944c6242378baaeb417eee}{getcap}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_u_c_a1c3915f6bbfa8c610d2ed30d0c6a1778}\label{class_u_c_a1c3915f6bbfa8c610d2ed30d0c6a1778}} 
+int {\bfseries Num\+Students}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe \mbox{\hyperlink{class_u_c}{UC}}
+
+Esta classe define a relação entre turmas e UCs 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_u_c_a6864b210e2d3f511356b05750758ae78}\label{class_u_c_a6864b210e2d3f511356b05750758ae78}} 
+\index{UC@{UC}!UC@{UC}}
+\index{UC@{UC}!UC@{UC}}
+\doxysubsubsection{\texorpdfstring{UC()}{UC()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily UC\+::\+UC (\begin{DoxyParamCaption}\item[{string}]{code\+UC,  }\item[{string}]{Class,  }\item[{int}]{Num\+Students }\end{DoxyParamCaption})}
+
+Complexity\+: O(1) Construtor personalizado da classe. 
+\begin{DoxyParams}{Parameters}
+{\em code\+UC} & string relativa ao código da \mbox{\hyperlink{class_u_c}{UC}} \\
+\hline
+{\em Class} & string relativa ao código da turma \\
+\hline
+{\em Num\+Students} & int relativo ao número de estudantes \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_u_c_a75589af5b8a9b618a62ea40b8ebb0611}\label{class_u_c_a75589af5b8a9b618a62ea40b8ebb0611}} 
+\index{UC@{UC}!UC@{UC}}
+\index{UC@{UC}!UC@{UC}}
+\doxysubsubsection{\texorpdfstring{UC()}{UC()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily UC\+::\+UC (\begin{DoxyParamCaption}\item[{string}]{code\+UC,  }\item[{string}]{Class }\end{DoxyParamCaption})}
+
+Complexity\+: O(1) Construtor personalizado da classe \mbox{\hyperlink{class_u_c}{UC}} para \mbox{\hyperlink{class_student}{Student}}. 
+\begin{DoxyParams}{Parameters}
+{\em code\+UC} & string relativa ao código da \mbox{\hyperlink{class_u_c}{UC}} \\
+\hline
+{\em Class} & string relativa ao código da turma \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_u_c_a8043648cb2d740b01ad444814c7897d7}\label{class_u_c_a8043648cb2d740b01ad444814c7897d7}} 
+\index{UC@{UC}!UC@{UC}}
+\index{UC@{UC}!UC@{UC}}
+\doxysubsubsection{\texorpdfstring{UC()}{UC()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily UC\+::\+UC (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_u_c}{UC}} \&}]{C }\end{DoxyParamCaption})}
+
+Complexity\+: O(1) Copy Construtor da classe. 
+\begin{DoxyParams}{Parameters}
+{\em C} & membro da classe \mbox{\hyperlink{class_u_c}{UC}} que se pretende copiar \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_u_c_a9ff32b67afacb4755212fce2af4dfce8}\label{class_u_c_a9ff32b67afacb4755212fce2af4dfce8}} 
+\index{UC@{UC}!addStudent@{addStudent}}
+\index{addStudent@{addStudent}!UC@{UC}}
+\doxysubsubsection{\texorpdfstring{addStudent()}{addStudent()}}
+{\footnotesize\ttfamily void UC\+::add\+Student (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Complexity\+: O(1) Método void que incrementa o atributo Num\+Students \mbox{\Hypertarget{class_u_c_a39b9bd9113944c6242378baaeb417eee}\label{class_u_c_a39b9bd9113944c6242378baaeb417eee}} 
+\index{UC@{UC}!getcap@{getcap}}
+\index{getcap@{getcap}!UC@{UC}}
+\doxysubsubsection{\texorpdfstring{getcap()}{getcap()}}
+{\footnotesize\ttfamily int UC\+::getcap (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Complexity\+: O(1) Método normal que devolve o atributo cap \begin{DoxyReturn}{Returns}
+int que representa o número máximo de alunos numa turma 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_u_c_a154525181febaf2e451b000fa0c087bb}\label{class_u_c_a154525181febaf2e451b000fa0c087bb}} 
+\index{UC@{UC}!getClass@{getClass}}
+\index{getClass@{getClass}!UC@{UC}}
+\doxysubsubsection{\texorpdfstring{getClass()}{getClass()}}
+{\footnotesize\ttfamily string UC\+::get\+Class (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Complexity\+: O(1) Método normal que devolve o atributo Class \begin{DoxyReturn}{Returns}
+string relativa ao código da turma 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_u_c_aafd6bcadf9924fe23a9567235f6b6522}\label{class_u_c_aafd6bcadf9924fe23a9567235f6b6522}} 
+\index{UC@{UC}!getcodeUC@{getcodeUC}}
+\index{getcodeUC@{getcodeUC}!UC@{UC}}
+\doxysubsubsection{\texorpdfstring{getcodeUC()}{getcodeUC()}}
+{\footnotesize\ttfamily string UC\+::getcode\+UC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Complexity\+: O(1) Método normal que devolve o atributo code\+UC \begin{DoxyReturn}{Returns}
+string relativa ao código da \mbox{\hyperlink{class_u_c}{UC}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_u_c_a34da5cde9e79aae18dac09df97d2bbad}\label{class_u_c_a34da5cde9e79aae18dac09df97d2bbad}} 
+\index{UC@{UC}!getNumStudents@{getNumStudents}}
+\index{getNumStudents@{getNumStudents}!UC@{UC}}
+\doxysubsubsection{\texorpdfstring{getNumStudents()}{getNumStudents()}}
+{\footnotesize\ttfamily int UC\+::get\+Num\+Students (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Complexity\+: O(1) Método normal que devolve o atributo Num\+Students \begin{DoxyReturn}{Returns}
+int que representa o número de alunos numa turma 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_u_c_a40e8228acf779facddef516c9376d778}\label{class_u_c_a40e8228acf779facddef516c9376d778}} 
+\index{UC@{UC}!operator==@{operator==}}
+\index{operator==@{operator==}!UC@{UC}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool UC\+::operator== (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_u_c}{UC}} \&}]{UC }\end{DoxyParamCaption}) const}
+
+Complexity\+: O(1) Operador de igualdade para dois membros da classe \mbox{\hyperlink{class_student}{Student}}. 
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_u_c}{UC}}} & membro da classe \mbox{\hyperlink{class_u_c}{UC}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true caso os dois membros sejam relativos à mesma turma, false caso contrário 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_u_c_a36a24383a6e598ae4f541550ee2ea0c8}\label{class_u_c_a36a24383a6e598ae4f541550ee2ea0c8}} 
+\index{UC@{UC}!removeStudent@{removeStudent}}
+\index{removeStudent@{removeStudent}!UC@{UC}}
+\doxysubsubsection{\texorpdfstring{removeStudent()}{removeStudent()}}
+{\footnotesize\ttfamily void UC\+::remove\+Student (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Complexity\+: O(1) Método void que decrementa o atributo Num\+Students \mbox{\Hypertarget{class_u_c_a582ea06a6d57ea391bae337d15de8cfb}\label{class_u_c_a582ea06a6d57ea391bae337d15de8cfb}} 
+\index{UC@{UC}!setClass@{setClass}}
+\index{setClass@{setClass}!UC@{UC}}
+\doxysubsubsection{\texorpdfstring{setClass()}{setClass()}}
+{\footnotesize\ttfamily void UC\+::set\+Class (\begin{DoxyParamCaption}\item[{string}]{new\+Class }\end{DoxyParamCaption})}
+
+Complexity\+: O(1) Método void que modifica o atributo Class segundo o parâmetro utilizado 
+\begin{DoxyParams}{Parameters}
+{\em new\+Class} & string relativa ao código da turma \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_u_c_a16e914e79b27697e0886eae4390bce2f}\label{class_u_c_a16e914e79b27697e0886eae4390bce2f}} 
+\index{UC@{UC}!setcodeUC@{setcodeUC}}
+\index{setcodeUC@{setcodeUC}!UC@{UC}}
+\doxysubsubsection{\texorpdfstring{setcodeUC()}{setcodeUC()}}
+{\footnotesize\ttfamily void UC\+::setcode\+UC (\begin{DoxyParamCaption}\item[{string}]{newcode\+UC }\end{DoxyParamCaption})}
+
+Complexity\+: O(1) Método void que modifica o atributo code\+UC segundo o parâmetro utilizado 
+\begin{DoxyParams}{Parameters}
+{\em newcode\+UC} & string relativa ao código da \mbox{\hyperlink{class_u_c}{UC}} \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Headers/UC.\+h\item 
+src/\+Implementation/UC.\+cpp\end{DoxyCompactItemize}

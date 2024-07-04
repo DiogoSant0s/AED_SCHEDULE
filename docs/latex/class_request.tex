@@ -1,0 +1,161 @@
+\hypertarget{class_request}{}\doxysection{Request Class Reference}
+\label{class_request}\index{Request@{Request}}
+
+
+Classe que representa um pedido de alteração de horário Esta classe é usada para representar um pedido de alteração de horário e guarda o número do aluno, o código da turma, a unidade curricular, o tipo de pedido e o estado do pedido.  
+
+
+
+
+{\ttfamily \#include $<$Request.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_request_a9ea2a02aeb9618325ce100cd8606ebef}{Request}} (int Student\+Id, string code\+UC, string Class, string request\+Type)
+\begin{DoxyCompactList}\small\item\em Construtor da classe \mbox{\hyperlink{class_request}{Request}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_request_a4f92281a7435e79e7fb8f3a44047e1dd}{get\+Student\+Id}} () const
+\begin{DoxyCompactList}\small\item\em Método normal que devolve o atributo Student\+Id. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_request_aee9808cdede1cf3f041d5b48ca2cfe12}{getcode\+UC}} () const
+\begin{DoxyCompactList}\small\item\em Método normal que devolve o atributo code\+UC. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_request_ad29c6ec327df56a88e628e1c61685d6e}{get\+Class}} () const
+\begin{DoxyCompactList}\small\item\em Método normal que devolve o atributo Class. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_request_aaadda6ff6d4a2d4e200753495a0ec079}{get\+Request\+Type}} () const
+\begin{DoxyCompactList}\small\item\em Método normal que devolve o atributo request\+Type. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_request_abaa6649a92d9100a62f6de0e611aafe0}{get\+Request\+Status}} () const
+\begin{DoxyCompactList}\small\item\em Método normal que devolve o atributo request\+Status. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_request_a95889a56c38d5794dd5222ef792a7547}{set\+Request\+Status}} (string request\+Status)
+\begin{DoxyCompactList}\small\item\em Método void que modifica o atributo request\+Status segundo o parâmetro utilizado. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_request_ae2509c776b1c13a372ede904025266ad}{handle\+Request}} (vector$<$ \mbox{\hyperlink{class_student}{Student}} $>$ Students, const vector$<$ \mbox{\hyperlink{class_u_c}{UC}} $\ast$ $>$ \&UCs, const vector$<$ \mbox{\hyperlink{class_schedule}{Schedule}} $>$ \&Schedules)
+\begin{DoxyCompactList}\small\item\em Processa o pedido, se possível Processa o pedido, se possível.~\newline
+Este metodo consgue adicionar ou remover uma turma a um estudante, ou trocar uma turma por outra, para isto, primeiro remove o estudante da turma de origem e adiciona-\/o à turma de destino. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe que representa um pedido de alteração de horário Esta classe é usada para representar um pedido de alteração de horário e guarda o número do aluno, o código da turma, a unidade curricular, o tipo de pedido e o estado do pedido. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_request_a9ea2a02aeb9618325ce100cd8606ebef}\label{class_request_a9ea2a02aeb9618325ce100cd8606ebef}} 
+\index{Request@{Request}!Request@{Request}}
+\index{Request@{Request}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{Request()}{Request()}}
+{\footnotesize\ttfamily Request\+::\+Request (\begin{DoxyParamCaption}\item[{int}]{Student\+Id,  }\item[{string}]{code\+UC,  }\item[{string}]{Class,  }\item[{string}]{request\+Type }\end{DoxyParamCaption})}
+
+
+
+Construtor da classe \mbox{\hyperlink{class_request}{Request}}. 
+
+Complexity\+: O(1) 
+\begin{DoxyParams}{Parameters}
+{\em Student\+Id} & Numero de estudante \\
+\hline
+{\em code\+UC} & Código da unidade curricular \\
+\hline
+{\em Class} & Código da turma \\
+\hline
+{\em request\+Type} & Tipo de pedido \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_request_ad29c6ec327df56a88e628e1c61685d6e}\label{class_request_ad29c6ec327df56a88e628e1c61685d6e}} 
+\index{Request@{Request}!getClass@{getClass}}
+\index{getClass@{getClass}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getClass()}{getClass()}}
+{\footnotesize\ttfamily string Request\+::get\+Class (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Método normal que devolve o atributo Class. 
+
+Complexity\+: O(1) \begin{DoxyReturn}{Returns}
+string relativa ao código da turma 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_request_aee9808cdede1cf3f041d5b48ca2cfe12}\label{class_request_aee9808cdede1cf3f041d5b48ca2cfe12}} 
+\index{Request@{Request}!getcodeUC@{getcodeUC}}
+\index{getcodeUC@{getcodeUC}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getcodeUC()}{getcodeUC()}}
+{\footnotesize\ttfamily string Request\+::getcode\+UC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Método normal que devolve o atributo code\+UC. 
+
+Complexity\+: O(1) \begin{DoxyReturn}{Returns}
+string relativa ao código da unidade curricular 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_request_abaa6649a92d9100a62f6de0e611aafe0}\label{class_request_abaa6649a92d9100a62f6de0e611aafe0}} 
+\index{Request@{Request}!getRequestStatus@{getRequestStatus}}
+\index{getRequestStatus@{getRequestStatus}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getRequestStatus()}{getRequestStatus()}}
+{\footnotesize\ttfamily string Request\+::get\+Request\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Método normal que devolve o atributo request\+Status. 
+
+Complexity\+: O(1) \begin{DoxyReturn}{Returns}
+string relativa ao estado do pedido 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_request_aaadda6ff6d4a2d4e200753495a0ec079}\label{class_request_aaadda6ff6d4a2d4e200753495a0ec079}} 
+\index{Request@{Request}!getRequestType@{getRequestType}}
+\index{getRequestType@{getRequestType}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getRequestType()}{getRequestType()}}
+{\footnotesize\ttfamily string Request\+::get\+Request\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Método normal que devolve o atributo request\+Type. 
+
+Complexity\+: O(1) \begin{DoxyReturn}{Returns}
+string relativa ao tipo de pedido 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_request_a4f92281a7435e79e7fb8f3a44047e1dd}\label{class_request_a4f92281a7435e79e7fb8f3a44047e1dd}} 
+\index{Request@{Request}!getStudentId@{getStudentId}}
+\index{getStudentId@{getStudentId}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getStudentId()}{getStudentId()}}
+{\footnotesize\ttfamily int Request\+::get\+Student\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Método normal que devolve o atributo Student\+Id. 
+
+Complexity\+: O(1) \begin{DoxyReturn}{Returns}
+int relativo ao número de estudante 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_request_ae2509c776b1c13a372ede904025266ad}\label{class_request_ae2509c776b1c13a372ede904025266ad}} 
+\index{Request@{Request}!handleRequest@{handleRequest}}
+\index{handleRequest@{handleRequest}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{handleRequest()}{handleRequest()}}
+{\footnotesize\ttfamily bool Request\+::handle\+Request (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_student}{Student}} $>$}]{Students,  }\item[{const vector$<$ \mbox{\hyperlink{class_u_c}{UC}} $\ast$ $>$ \&}]{UCs,  }\item[{const vector$<$ \mbox{\hyperlink{class_schedule}{Schedule}} $>$ \&}]{Schedules }\end{DoxyParamCaption})}
+
+
+
+Processa o pedido, se possível Processa o pedido, se possível.~\newline
+Este metodo consgue adicionar ou remover uma turma a um estudante, ou trocar uma turma por outra, para isto, primeiro remove o estudante da turma de origem e adiciona-\/o à turma de destino. 
+
+Complexity\+: O(n$^\wedge$2) \begin{DoxyReturn}{Returns}
+true se o pedido for aceite, false caso contrario 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_request_a95889a56c38d5794dd5222ef792a7547}\label{class_request_a95889a56c38d5794dd5222ef792a7547}} 
+\index{Request@{Request}!setRequestStatus@{setRequestStatus}}
+\index{setRequestStatus@{setRequestStatus}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{setRequestStatus()}{setRequestStatus()}}
+{\footnotesize\ttfamily void Request\+::set\+Request\+Status (\begin{DoxyParamCaption}\item[{string}]{request\+Status }\end{DoxyParamCaption})}
+
+
+
+Método void que modifica o atributo request\+Status segundo o parâmetro utilizado. 
+
+Complexity\+: O(1) 
+\begin{DoxyParams}{Parameters}
+{\em request\+Status} & string relativa ao estado do pedido \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Headers/Request.\+h\item 
+src/\+Implementation/Request.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,47 @@
+\hypertarget{_load_data_8h_source}{}\doxysection{Load\+Data.\+h}
+\label{_load_data_8h_source}\index{src/Headers/LoadData.h@{src/Headers/LoadData.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef AED\_SCHEDULE\_LOADDATA\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define AED\_SCHEDULE\_LOADDATA\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <sstream>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}vector"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <algorithm>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <queue>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}Request.h"{}}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{19 \textcolor{keyword}{class }\mbox{\hyperlink{class_load_data}{LoadData}} \{}
+\DoxyCodeLine{20     vector<UC*> UCs;}
+\DoxyCodeLine{21     vector<Schedule> Schedules;}
+\DoxyCodeLine{22     vector<Student> Students;}
+\DoxyCodeLine{23     queue<Request> Requests;}
+\DoxyCodeLine{24 \textcolor{keyword}{public}:}
+\DoxyCodeLine{29     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_load_data_adccf1d4e14bf4bfc36cd43c08932ad07}{loadData\_Classes}}();}
+\DoxyCodeLine{34     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_load_data_adb0f2c3445a27e937de9ff5372840da9}{loadData\_Classes\_per\_UC}}();}
+\DoxyCodeLine{39     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_load_data_ab8e9ecbaf8945ba183a3d3e0b80fe6d5}{loadData\_Students\_Classes}}();}
+\DoxyCodeLine{45     vector<UC*> \mbox{\hyperlink{class_load_data_a03c64d37367cd029ebfdedbc2bf38f3f}{getUCs}}();}
+\DoxyCodeLine{51     vector<Schedule> \mbox{\hyperlink{class_load_data_a36bed4e1b6a9412ee03e23a5ed4c8aa7}{getSchedules}}();}
+\DoxyCodeLine{57     vector<Student> \mbox{\hyperlink{class_load_data_a691da598f45867cb34f10f0a1fcc458d}{getStudents}}();}
+\DoxyCodeLine{63     queue<Request> \&\mbox{\hyperlink{class_load_data_a538e665de4b877fd424ec1e3248d225f}{getRequests}}();}
+\DoxyCodeLine{69     vector<UC*> \mbox{\hyperlink{class_load_data_ae31732ca803dd77474f4fe8758bbdaea}{sortUCs\_CodeUC}}();}
+\DoxyCodeLine{75     vector<UC*> \mbox{\hyperlink{class_load_data_abc6e364b075235634caf700a998d53ea}{sortUCs\_ClassCode}}();}
+\DoxyCodeLine{81     vector<UC*> \mbox{\hyperlink{class_load_data_acfd5dcd3525c6d505a00b47e205289cb}{sortUCs\_NumStudents}}();}
+\DoxyCodeLine{87     vector<Student> \mbox{\hyperlink{class_load_data_adb48cfd6175b527c43ed016efd8a4522}{sortStudents\_StudentCode}}();}
+\DoxyCodeLine{93     vector<Student> \mbox{\hyperlink{class_load_data_a51ae3dce804836191ef1ea98e231b351}{sortStudents\_StudentName}}();}
+\DoxyCodeLine{99     vector<Schedule> \mbox{\hyperlink{class_load_data_aeb9178095f54ebe3db8b6a77318bc5c4}{sortSchedules\_CodeUC}}();}
+\DoxyCodeLine{105     vector<Schedule> \mbox{\hyperlink{class_load_data_a5facf65c34186091945e449caa331564}{sortSchedules\_ClassCode}}();}
+\DoxyCodeLine{113     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_load_data_a540675662d94aa8c76341eb648b6afc9}{removeStudent}}(\textcolor{keywordtype}{int} StudentId, \textcolor{keyword}{const} \textcolor{keywordtype}{string}\& codeUC, \textcolor{keyword}{const} \textcolor{keywordtype}{string}\& Class);}
+\DoxyCodeLine{121     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_load_data_a76b960c139e2496f1662bf4b82abf9a8}{addStudent}}(\textcolor{keywordtype}{int} StudentId, \textcolor{keyword}{const} \textcolor{keywordtype}{string}\& codeUC, \textcolor{keyword}{const} \textcolor{keywordtype}{string}\& Class);}
+\DoxyCodeLine{130     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_load_data_aa47eb0bfc9a52b6cab667fa35644a3b3}{processAllRequests}}(\textcolor{keyword}{const} vector<Student>\& Students, \textcolor{keyword}{const} vector<UC*>\& UCs, \textcolor{keyword}{const} vector<Schedule>\& Schedules, queue<Request>\& Requests);}
+\DoxyCodeLine{136     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_load_data_a336c26e15c0cf7e10cba42070eca6174}{archiveRequest}}(queue<Request>\& r);}
+\DoxyCodeLine{142     \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_load_data_a1d93842eb264b1b173f20b266ba5dd97}{archiveStudents}}(\textcolor{keyword}{const} vector<Student>\& S);}
+\DoxyCodeLine{143 \};}
+\DoxyCodeLine{144 }
+\DoxyCodeLine{145 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//AED\_SCHEDULE\_LOADDATA\_H}}
+
+\end{DoxyCode}

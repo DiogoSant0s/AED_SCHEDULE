@@ -1,0 +1,35 @@
+\hypertarget{_request_8h_source}{}\doxysection{Request.\+h}
+\label{_request_8h_source}\index{src/Headers/Request.h@{src/Headers/Request.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef AED\_SCHEDULE\_REQUEST\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define AED\_SCHEDULE\_REQUEST\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <utility>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}Student.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}Schedule.h"{}}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{17 \textcolor{keyword}{class }\mbox{\hyperlink{class_request}{Request}} \{}
+\DoxyCodeLine{18 \textcolor{keyword}{private}:}
+\DoxyCodeLine{19     \textcolor{keywordtype}{int} StudentId;}
+\DoxyCodeLine{20     \textcolor{keywordtype}{string} codeUC;}
+\DoxyCodeLine{21     \textcolor{keywordtype}{string} Class;}
+\DoxyCodeLine{22     \textcolor{keywordtype}{string} requestType;}
+\DoxyCodeLine{23     \textcolor{keywordtype}{string} requestStatus;}
+\DoxyCodeLine{24 \textcolor{keyword}{public}:}
+\DoxyCodeLine{33     \mbox{\hyperlink{class_request}{Request}}(\textcolor{keywordtype}{int} StudentId, \textcolor{keywordtype}{string} codeUC, \textcolor{keywordtype}{string} Class, \textcolor{keywordtype}{string} requestType);}
+\DoxyCodeLine{39     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_request_a4f92281a7435e79e7fb8f3a44047e1dd}{getStudentId}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{45     \textcolor{keywordtype}{string} \mbox{\hyperlink{class_request_aee9808cdede1cf3f041d5b48ca2cfe12}{getcodeUC}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{51     \textcolor{keywordtype}{string} \mbox{\hyperlink{class_request_ad29c6ec327df56a88e628e1c61685d6e}{getClass}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{57     \textcolor{keywordtype}{string} \mbox{\hyperlink{class_request_aaadda6ff6d4a2d4e200753495a0ec079}{getRequestType}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{63     \textcolor{keywordtype}{string} \mbox{\hyperlink{class_request_abaa6649a92d9100a62f6de0e611aafe0}{getRequestStatus}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{69     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_request_a95889a56c38d5794dd5222ef792a7547}{setRequestStatus}}(\textcolor{keywordtype}{string} requestStatus);}
+\DoxyCodeLine{78     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_request_ae2509c776b1c13a372ede904025266ad}{handleRequest}}(vector<Student> Students, \textcolor{keyword}{const} vector<UC*>\& UCs, \textcolor{keyword}{const} vector<Schedule>\& Schedules);}
+\DoxyCodeLine{79 \};}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//AED\_SCHEDULE\_REQUEST\_H}}
+
+\end{DoxyCode}

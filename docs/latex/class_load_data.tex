@@ -1,0 +1,258 @@
+\hypertarget{class_load_data}{}\doxysection{Load\+Data Class Reference}
+\label{class_load_data}\index{LoadData@{LoadData}}
+
+
+{\ttfamily \#include $<$Load\+Data.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_load_data_adccf1d4e14bf4bfc36cd43c08932ad07}{load\+Data\+\_\+\+Classes}} ()
+\item 
+void \mbox{\hyperlink{class_load_data_adb0f2c3445a27e937de9ff5372840da9}{load\+Data\+\_\+\+Classes\+\_\+per\+\_\+\+UC}} ()
+\item 
+void \mbox{\hyperlink{class_load_data_ab8e9ecbaf8945ba183a3d3e0b80fe6d5}{load\+Data\+\_\+\+Students\+\_\+\+Classes}} ()
+\item 
+vector$<$ \mbox{\hyperlink{class_u_c}{UC}} $\ast$ $>$ \mbox{\hyperlink{class_load_data_a03c64d37367cd029ebfdedbc2bf38f3f}{get\+UCs}} ()
+\item 
+vector$<$ \mbox{\hyperlink{class_schedule}{Schedule}} $>$ \mbox{\hyperlink{class_load_data_a36bed4e1b6a9412ee03e23a5ed4c8aa7}{get\+Schedules}} ()
+\item 
+vector$<$ \mbox{\hyperlink{class_student}{Student}} $>$ \mbox{\hyperlink{class_load_data_a691da598f45867cb34f10f0a1fcc458d}{get\+Students}} ()
+\item 
+queue$<$ \mbox{\hyperlink{class_request}{Request}} $>$ \& \mbox{\hyperlink{class_load_data_a538e665de4b877fd424ec1e3248d225f}{get\+Requests}} ()
+\item 
+vector$<$ \mbox{\hyperlink{class_u_c}{UC}} $\ast$ $>$ \mbox{\hyperlink{class_load_data_ae31732ca803dd77474f4fe8758bbdaea}{sort\+UCs\+\_\+\+Code\+UC}} ()
+\item 
+vector$<$ \mbox{\hyperlink{class_u_c}{UC}} $\ast$ $>$ \mbox{\hyperlink{class_load_data_abc6e364b075235634caf700a998d53ea}{sort\+UCs\+\_\+\+Class\+Code}} ()
+\item 
+vector$<$ \mbox{\hyperlink{class_u_c}{UC}} $\ast$ $>$ \mbox{\hyperlink{class_load_data_acfd5dcd3525c6d505a00b47e205289cb}{sort\+UCs\+\_\+\+Num\+Students}} ()
+\item 
+vector$<$ \mbox{\hyperlink{class_student}{Student}} $>$ \mbox{\hyperlink{class_load_data_adb48cfd6175b527c43ed016efd8a4522}{sort\+Students\+\_\+\+Student\+Code}} ()
+\item 
+vector$<$ \mbox{\hyperlink{class_student}{Student}} $>$ \mbox{\hyperlink{class_load_data_a51ae3dce804836191ef1ea98e231b351}{sort\+Students\+\_\+\+Student\+Name}} ()
+\item 
+vector$<$ \mbox{\hyperlink{class_schedule}{Schedule}} $>$ \mbox{\hyperlink{class_load_data_aeb9178095f54ebe3db8b6a77318bc5c4}{sort\+Schedules\+\_\+\+Code\+UC}} ()
+\item 
+vector$<$ \mbox{\hyperlink{class_schedule}{Schedule}} $>$ \mbox{\hyperlink{class_load_data_a5facf65c34186091945e449caa331564}{sort\+Schedules\+\_\+\+Class\+Code}} ()
+\item 
+void \mbox{\hyperlink{class_load_data_a540675662d94aa8c76341eb648b6afc9}{remove\+Student}} (int Student\+Id, const string \&code\+UC, const string \&Class)
+\item 
+void \mbox{\hyperlink{class_load_data_a76b960c139e2496f1662bf4b82abf9a8}{add\+Student}} (int Student\+Id, const string \&code\+UC, const string \&Class)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_load_data_aa47eb0bfc9a52b6cab667fa35644a3b3}{process\+All\+Requests}} (const vector$<$ \mbox{\hyperlink{class_student}{Student}} $>$ \&Students, const vector$<$ \mbox{\hyperlink{class_u_c}{UC}} $\ast$ $>$ \&UCs, const vector$<$ \mbox{\hyperlink{class_schedule}{Schedule}} $>$ \&Schedules, queue$<$ \mbox{\hyperlink{class_request}{Request}} $>$ \&Requests)
+\item 
+static void \mbox{\hyperlink{class_load_data_a336c26e15c0cf7e10cba42070eca6174}{archive\+Request}} (queue$<$ \mbox{\hyperlink{class_request}{Request}} $>$ \&r)
+\begin{DoxyCompactList}\small\item\em Arquiva os requests fornecidos. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_load_data_a1d93842eb264b1b173f20b266ba5dd97}{archive\+Students}} (const vector$<$ \mbox{\hyperlink{class_student}{Student}} $>$ \&S)
+\begin{DoxyCompactList}\small\item\em Arquiva os Students fornecidos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe \mbox{\hyperlink{class_load_data}{Load\+Data}}
+
+A classe é responsável pelo carregamento, armazenamento de dados e sorting de dados. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_load_data_a76b960c139e2496f1662bf4b82abf9a8}\label{class_load_data_a76b960c139e2496f1662bf4b82abf9a8}} 
+\index{LoadData@{LoadData}!addStudent@{addStudent}}
+\index{addStudent@{addStudent}!LoadData@{LoadData}}
+\doxysubsubsection{\texorpdfstring{addStudent()}{addStudent()}}
+{\footnotesize\ttfamily void Load\+Data\+::add\+Student (\begin{DoxyParamCaption}\item[{int}]{Student\+Id,  }\item[{const string \&}]{code\+UC,  }\item[{const string \&}]{Class }\end{DoxyParamCaption})}
+
+Complexity\+: O(S + c + C) = O(n) with S being the Student\+Id, c being code\+UC and C being Class Método responsável por acrescentar um pedido de adição de um estudante a uma turma aos Requests 
+\begin{DoxyParams}{Parameters}
+{\em Student\+Id} & int relativa ao número de estudante do estudante \\
+\hline
+{\em code\+UC} & string relativa ao código da \mbox{\hyperlink{class_u_c}{UC}} \\
+\hline
+{\em Class} & string relativa ao código da turma \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_load_data_a336c26e15c0cf7e10cba42070eca6174}\label{class_load_data_a336c26e15c0cf7e10cba42070eca6174}} 
+\index{LoadData@{LoadData}!archiveRequest@{archiveRequest}}
+\index{archiveRequest@{archiveRequest}!LoadData@{LoadData}}
+\doxysubsubsection{\texorpdfstring{archiveRequest()}{archiveRequest()}}
+{\footnotesize\ttfamily void Load\+Data\+::archive\+Request (\begin{DoxyParamCaption}\item[{queue$<$ \mbox{\hyperlink{class_request}{Request}} $>$ \&}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Arquiva os requests fornecidos. 
+
+Complexity\+: O(n) 
+\begin{DoxyParams}{Parameters}
+{\em r} & queue que contém os requests fornecidos \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_load_data_a1d93842eb264b1b173f20b266ba5dd97}\label{class_load_data_a1d93842eb264b1b173f20b266ba5dd97}} 
+\index{LoadData@{LoadData}!archiveStudents@{archiveStudents}}
+\index{archiveStudents@{archiveStudents}!LoadData@{LoadData}}
+\doxysubsubsection{\texorpdfstring{archiveStudents()}{archiveStudents()}}
+{\footnotesize\ttfamily void Load\+Data\+::archive\+Students (\begin{DoxyParamCaption}\item[{const vector$<$ \mbox{\hyperlink{class_student}{Student}} $>$ \&}]{S }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Arquiva os Students fornecidos. 
+
+Complexity\+: O(n$^\wedge$2) 
+\begin{DoxyParams}{Parameters}
+{\em S} & vector que contém os Students fornecidos \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_load_data_a538e665de4b877fd424ec1e3248d225f}\label{class_load_data_a538e665de4b877fd424ec1e3248d225f}} 
+\index{LoadData@{LoadData}!getRequests@{getRequests}}
+\index{getRequests@{getRequests}!LoadData@{LoadData}}
+\doxysubsubsection{\texorpdfstring{getRequests()}{getRequests()}}
+{\footnotesize\ttfamily queue$<$ \mbox{\hyperlink{class_request}{Request}} $>$ \& Load\+Data\+::get\+Requests (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Complexity\+: O(1) Método normal que devolve o atributo Requests \begin{DoxyReturn}{Returns}
+queue que representa os Requests 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_load_data_a36bed4e1b6a9412ee03e23a5ed4c8aa7}\label{class_load_data_a36bed4e1b6a9412ee03e23a5ed4c8aa7}} 
+\index{LoadData@{LoadData}!getSchedules@{getSchedules}}
+\index{getSchedules@{getSchedules}!LoadData@{LoadData}}
+\doxysubsubsection{\texorpdfstring{getSchedules()}{getSchedules()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_schedule}{Schedule}} $>$ Load\+Data\+::get\+Schedules (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Complexity\+: O(1) Método normal que devolve o atributo Schedules \begin{DoxyReturn}{Returns}
+vector que representa os Schedules 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_load_data_a691da598f45867cb34f10f0a1fcc458d}\label{class_load_data_a691da598f45867cb34f10f0a1fcc458d}} 
+\index{LoadData@{LoadData}!getStudents@{getStudents}}
+\index{getStudents@{getStudents}!LoadData@{LoadData}}
+\doxysubsubsection{\texorpdfstring{getStudents()}{getStudents()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_student}{Student}} $>$ Load\+Data\+::get\+Students (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Complexity\+: O(1) Método normal que devolve o atributo Students \begin{DoxyReturn}{Returns}
+vector que representa os Students 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_load_data_a03c64d37367cd029ebfdedbc2bf38f3f}\label{class_load_data_a03c64d37367cd029ebfdedbc2bf38f3f}} 
+\index{LoadData@{LoadData}!getUCs@{getUCs}}
+\index{getUCs@{getUCs}!LoadData@{LoadData}}
+\doxysubsubsection{\texorpdfstring{getUCs()}{getUCs()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_u_c}{UC}} $\ast$ $>$ Load\+Data\+::get\+UCs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Complexity\+: O(1) Método normal que devolve o atributo UCs \begin{DoxyReturn}{Returns}
+vector que representa as UCs 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_load_data_adccf1d4e14bf4bfc36cd43c08932ad07}\label{class_load_data_adccf1d4e14bf4bfc36cd43c08932ad07}} 
+\index{LoadData@{LoadData}!loadData\_Classes@{loadData\_Classes}}
+\index{loadData\_Classes@{loadData\_Classes}!LoadData@{LoadData}}
+\doxysubsubsection{\texorpdfstring{loadData\_Classes()}{loadData\_Classes()}}
+{\footnotesize\ttfamily void Load\+Data\+::load\+Data\+\_\+\+Classes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Complexity\+: O(n) Método void responsável por ler o ficheiro classes.\+csv que contêm as informações sobre o horário de cada turma relativo a cada cadeira. \mbox{\Hypertarget{class_load_data_adb0f2c3445a27e937de9ff5372840da9}\label{class_load_data_adb0f2c3445a27e937de9ff5372840da9}} 
+\index{LoadData@{LoadData}!loadData\_Classes\_per\_UC@{loadData\_Classes\_per\_UC}}
+\index{loadData\_Classes\_per\_UC@{loadData\_Classes\_per\_UC}!LoadData@{LoadData}}
+\doxysubsubsection{\texorpdfstring{loadData\_Classes\_per\_UC()}{loadData\_Classes\_per\_UC()}}
+{\footnotesize\ttfamily void Load\+Data\+::load\+Data\+\_\+\+Classes\+\_\+per\+\_\+\+UC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Complexity\+: O(n) Método void responsável por ler o ficheiro classes\+\_\+per\+\_\+uc.\+csv que contêm as informações sobre a relação entre turmas e UCs \mbox{\Hypertarget{class_load_data_ab8e9ecbaf8945ba183a3d3e0b80fe6d5}\label{class_load_data_ab8e9ecbaf8945ba183a3d3e0b80fe6d5}} 
+\index{LoadData@{LoadData}!loadData\_Students\_Classes@{loadData\_Students\_Classes}}
+\index{loadData\_Students\_Classes@{loadData\_Students\_Classes}!LoadData@{LoadData}}
+\doxysubsubsection{\texorpdfstring{loadData\_Students\_Classes()}{loadData\_Students\_Classes()}}
+{\footnotesize\ttfamily void Load\+Data\+::load\+Data\+\_\+\+Students\+\_\+\+Classes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Complexity\+: O(n) Método void responsável por ler o ficheiro students\+\_\+classes.\+csv que contêm as informações sobre as aulas de um estudante \mbox{\Hypertarget{class_load_data_aa47eb0bfc9a52b6cab667fa35644a3b3}\label{class_load_data_aa47eb0bfc9a52b6cab667fa35644a3b3}} 
+\index{LoadData@{LoadData}!processAllRequests@{processAllRequests}}
+\index{processAllRequests@{processAllRequests}!LoadData@{LoadData}}
+\doxysubsubsection{\texorpdfstring{processAllRequests()}{processAllRequests()}}
+{\footnotesize\ttfamily void Load\+Data\+::process\+All\+Requests (\begin{DoxyParamCaption}\item[{const vector$<$ \mbox{\hyperlink{class_student}{Student}} $>$ \&}]{Students,  }\item[{const vector$<$ \mbox{\hyperlink{class_u_c}{UC}} $\ast$ $>$ \&}]{UCs,  }\item[{const vector$<$ \mbox{\hyperlink{class_schedule}{Schedule}} $>$ \&}]{Schedules,  }\item[{queue$<$ \mbox{\hyperlink{class_request}{Request}} $>$ \&}]{Requests }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Complexity\+: O(log(n)) Método responsável por processar os Requests 
+\begin{DoxyParams}{Parameters}
+{\em Students} & vector que representa os Students \\
+\hline
+{\em UCs} & vector que representa as UCs \\
+\hline
+{\em Schedules} & vector que representa os Schedules \\
+\hline
+{\em Requests} & queue que representa os Requests \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_load_data_a540675662d94aa8c76341eb648b6afc9}\label{class_load_data_a540675662d94aa8c76341eb648b6afc9}} 
+\index{LoadData@{LoadData}!removeStudent@{removeStudent}}
+\index{removeStudent@{removeStudent}!LoadData@{LoadData}}
+\doxysubsubsection{\texorpdfstring{removeStudent()}{removeStudent()}}
+{\footnotesize\ttfamily void Load\+Data\+::remove\+Student (\begin{DoxyParamCaption}\item[{int}]{Student\+Id,  }\item[{const string \&}]{code\+UC,  }\item[{const string \&}]{Class }\end{DoxyParamCaption})}
+
+Complexity\+: O(S + c + C) = O(n) with S being the Student\+Id, c being code\+UC and C being Class Método responsável por acrescentar um pedido de remoção de um estudante de uma turma aos Requests 
+\begin{DoxyParams}{Parameters}
+{\em Student\+Id} & int relativa ao número de estudante do estudante \\
+\hline
+{\em code\+UC} & string relativa ao código da \mbox{\hyperlink{class_u_c}{UC}} \\
+\hline
+{\em Class} & string relativa ao código da turma \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_load_data_a5facf65c34186091945e449caa331564}\label{class_load_data_a5facf65c34186091945e449caa331564}} 
+\index{LoadData@{LoadData}!sortSchedules\_ClassCode@{sortSchedules\_ClassCode}}
+\index{sortSchedules\_ClassCode@{sortSchedules\_ClassCode}!LoadData@{LoadData}}
+\doxysubsubsection{\texorpdfstring{sortSchedules\_ClassCode()}{sortSchedules\_ClassCode()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_schedule}{Schedule}} $>$ Load\+Data\+::sort\+Schedules\+\_\+\+Class\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Complexity\+: O(nlog(n)) with n being Schedules Método normal que devolve o atributo Schedules depois do sort() pelo atributo Class \begin{DoxyReturn}{Returns}
+vector que representa os Schedules sortidos pelo atributo name 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_load_data_aeb9178095f54ebe3db8b6a77318bc5c4}\label{class_load_data_aeb9178095f54ebe3db8b6a77318bc5c4}} 
+\index{LoadData@{LoadData}!sortSchedules\_CodeUC@{sortSchedules\_CodeUC}}
+\index{sortSchedules\_CodeUC@{sortSchedules\_CodeUC}!LoadData@{LoadData}}
+\doxysubsubsection{\texorpdfstring{sortSchedules\_CodeUC()}{sortSchedules\_CodeUC()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_schedule}{Schedule}} $>$ Load\+Data\+::sort\+Schedules\+\_\+\+Code\+UC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Complexity\+: O(nlog(n)) with n being Schedules Método normal que devolve o atributo Schedules depois do sort() pelo atributo code\+UC \begin{DoxyReturn}{Returns}
+vector que representa os Schedules sortidos pelo atributo name 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_load_data_adb48cfd6175b527c43ed016efd8a4522}\label{class_load_data_adb48cfd6175b527c43ed016efd8a4522}} 
+\index{LoadData@{LoadData}!sortStudents\_StudentCode@{sortStudents\_StudentCode}}
+\index{sortStudents\_StudentCode@{sortStudents\_StudentCode}!LoadData@{LoadData}}
+\doxysubsubsection{\texorpdfstring{sortStudents\_StudentCode()}{sortStudents\_StudentCode()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_student}{Student}} $>$ Load\+Data\+::sort\+Students\+\_\+\+Student\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Complexity\+: O(nlog(n)) with n being Students Método normal que devolve o atributo Students depois do sort() pelo atributo Student\+Id \begin{DoxyReturn}{Returns}
+vector que representa os Students sortidos pelo atributo Student\+Id 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_load_data_a51ae3dce804836191ef1ea98e231b351}\label{class_load_data_a51ae3dce804836191ef1ea98e231b351}} 
+\index{LoadData@{LoadData}!sortStudents\_StudentName@{sortStudents\_StudentName}}
+\index{sortStudents\_StudentName@{sortStudents\_StudentName}!LoadData@{LoadData}}
+\doxysubsubsection{\texorpdfstring{sortStudents\_StudentName()}{sortStudents\_StudentName()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_student}{Student}} $>$ Load\+Data\+::sort\+Students\+\_\+\+Student\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Complexity\+: O(nlog(n)) with n being Students Método normal que devolve o atributo Students depois do sort() pelo atributo name \begin{DoxyReturn}{Returns}
+vector que representa os Students sortidos pelo atributo name 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_load_data_abc6e364b075235634caf700a998d53ea}\label{class_load_data_abc6e364b075235634caf700a998d53ea}} 
+\index{LoadData@{LoadData}!sortUCs\_ClassCode@{sortUCs\_ClassCode}}
+\index{sortUCs\_ClassCode@{sortUCs\_ClassCode}!LoadData@{LoadData}}
+\doxysubsubsection{\texorpdfstring{sortUCs\_ClassCode()}{sortUCs\_ClassCode()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_u_c}{UC}} $\ast$ $>$ Load\+Data\+::sort\+UCs\+\_\+\+Class\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Complexity\+: O(nlog(n)) with n being UCs Método normal que devolve o atributo UCs depois do sort() pelo atributo Class \begin{DoxyReturn}{Returns}
+vector que representa os UCs sortidos pelo atributo Class 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_load_data_ae31732ca803dd77474f4fe8758bbdaea}\label{class_load_data_ae31732ca803dd77474f4fe8758bbdaea}} 
+\index{LoadData@{LoadData}!sortUCs\_CodeUC@{sortUCs\_CodeUC}}
+\index{sortUCs\_CodeUC@{sortUCs\_CodeUC}!LoadData@{LoadData}}
+\doxysubsubsection{\texorpdfstring{sortUCs\_CodeUC()}{sortUCs\_CodeUC()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_u_c}{UC}} $\ast$ $>$ Load\+Data\+::sort\+UCs\+\_\+\+Code\+UC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Complexity\+: O(nlog(n)) with n being UCs Método normal que devolve o atributo UCs depois do sort() pelo atributo code\+UC \begin{DoxyReturn}{Returns}
+vector que representa os UCs sortidos pelo atributo code\+UC 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_load_data_acfd5dcd3525c6d505a00b47e205289cb}\label{class_load_data_acfd5dcd3525c6d505a00b47e205289cb}} 
+\index{LoadData@{LoadData}!sortUCs\_NumStudents@{sortUCs\_NumStudents}}
+\index{sortUCs\_NumStudents@{sortUCs\_NumStudents}!LoadData@{LoadData}}
+\doxysubsubsection{\texorpdfstring{sortUCs\_NumStudents()}{sortUCs\_NumStudents()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_u_c}{UC}} $\ast$ $>$ Load\+Data\+::sort\+UCs\+\_\+\+Num\+Students (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Complexity\+: O(nlog(n)) with n being Students Método normal que devolve o atributo UCs depois do sort() pelo atributo Num\+Students \begin{DoxyReturn}{Returns}
+vector que representa os UCs sortidos pelo atributo Num\+Students 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Headers/Load\+Data.\+h\item 
+src/\+Implementation/Load\+Data.\+cpp\end{DoxyCompactItemize}

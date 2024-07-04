@@ -1,0 +1,34 @@
+\hypertarget{_schedule_8h_source}{}\doxysection{Schedule.\+h}
+\label{_schedule_8h_source}\index{src/Headers/Schedule.h@{src/Headers/Schedule.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef AED\_SCHEDULE\_SCHEDULE\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define AED\_SCHEDULE\_SCHEDULE\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <utility>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}Interval.h"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}UC.h"{}}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{17 \textcolor{keyword}{class }\mbox{\hyperlink{class_schedule}{Schedule}} \{}
+\DoxyCodeLine{18     \mbox{\hyperlink{class_u_c}{UC}} UCClass;}
+\DoxyCodeLine{19     vector<Interval> intervals;}
+\DoxyCodeLine{20 \textcolor{keyword}{public}:}
+\DoxyCodeLine{27     \mbox{\hyperlink{class_schedule}{Schedule}}(\mbox{\hyperlink{class_u_c}{UC}}\& UCClass, vector<Interval> intervals);}
+\DoxyCodeLine{33     \mbox{\hyperlink{class_schedule}{Schedule}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_schedule}{Schedule}} \&S, \textcolor{keyword}{const} \mbox{\hyperlink{class_u_c}{UC}}\& ucClass);}
+\DoxyCodeLine{39     \textcolor{keywordtype}{string} \mbox{\hyperlink{class_schedule_a8044788553c4d40da7382e522ad13dd5}{getCodeUC}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{45     \textcolor{keywordtype}{string} \mbox{\hyperlink{class_schedule_a1b7700d11933f882ac6205d537d94daf}{getClass}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{51     vector<Interval> \mbox{\hyperlink{class_schedule_a53575853fda485af63c87f27239a98f5}{getIntervals}}();}
+\DoxyCodeLine{57     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_schedule_abf394f0c45f84da0886accab58b7a66b}{setCodeUC}}(\textcolor{keywordtype}{string} newCodeUC) \textcolor{keyword}{const};}
+\DoxyCodeLine{63     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_schedule_a83fc1f65e88237f1632c49e8fe2ae767}{setClass}}(\textcolor{keywordtype}{string} newClass) \textcolor{keyword}{const};}
+\DoxyCodeLine{69     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_schedule_a2a73adc6d34da06a59e9899376fbf22f}{setInterval}}(\textcolor{keyword}{const} vector<Interval> \&newIntervals);}
+\DoxyCodeLine{75     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_schedule_adf52b3853456516a40b7306ff79aa5b2}{addInterval}}(\mbox{\hyperlink{class_interval}{Interval}}\& I);}
+\DoxyCodeLine{82     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_schedule_ab404ccf770f8be17fdaa4601bc4f06ac}{operator==}}(\mbox{\hyperlink{class_schedule}{Schedule}}\& S) \textcolor{keyword}{const};}
+\DoxyCodeLine{83 \};}
+\DoxyCodeLine{84 }
+\DoxyCodeLine{85 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//AED\_SCHEDULE\_SCHEDULE\_H}}
+
+\end{DoxyCode}
